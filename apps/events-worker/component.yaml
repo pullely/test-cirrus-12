@@ -75,4 +75,4 @@ spec:
     surface: events
     runtime: cloudflare
 # ci: cycle-break pass 1 — deploy cluster with feedback edges stripped (20260622T135810Z)
-# orun: redeploy 04-workers as_557e0dc42efc442db273
+# orun: redeploy 04-workers as_8def4de21bdc41b8b848
