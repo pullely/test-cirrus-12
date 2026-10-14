@@ -25,4 +25,4 @@ spec:
     layer: shared
     surface: contracts
 # ci: trigger full-component verification (orun v2.12.0 upgrade — PR #183)
-# orun: redeploy 02-foundation as_43679c3aa4584f57bcf6
+# orun: redeploy 02-foundation as_7e51020e704b446db7d5
