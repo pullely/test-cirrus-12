@@ -1,0 +1,11 @@
+{
+  "reponame": "test-cirrus-12",
+  "productname": "test-cirrus-12",
+  "productdomain": "test-cirrus-12.dev",
+  "apibaseurl": "https://api.test-cirrus-12.dev",
+  "subdomain": "rahulvarghesepullely",
+  "orunWorkspace": "org_445138ddf4a7408884dc40b9a0ae8e95",
+  "githuborg": "pullely",
+  "epicSlug": "infra-baselining",
+  "domain": false
+}
