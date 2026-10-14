@@ -57,9 +57,18 @@
         }
       ],
       "services": [
-        // @cycle-break:identity-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItbWVtYmVyc2hpcC13b3JrZXItc3RhZ2UiCiAgICAgICAgfSw=
-        // @cycle-break+nl:identity-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1wb2xpY3ktd29ya2VyLXN0YWdlIgogICAgICAgIH0=
-// @cycle-break:identity-worker->notifications-worker:LAogICAgICAgIHsKICAgICAgICAgICJiaW5kaW5nIjogIk5PVElGSUNBVElPTlNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtY2lycnVzLTEyLW5vdGlmaWNhdGlvbnMtd29ya2VyLXN0YWdlIgogICAgICAgIH0=
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-cirrus-12-membership-worker-stage"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-cirrus-12-policy-worker-stage"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "test-cirrus-12-notifications-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -80,9 +89,18 @@
         }
       ],
       "services": [
-        // @cycle-break:identity-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItbWVtYmVyc2hpcC13b3JrZXItcHJvZCIKICAgICAgICB9LA==
-        // @cycle-break+nl:identity-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1wb2xpY3ktd29ya2VyLXByb2QiCiAgICAgICAgfQ==
-// @cycle-break:identity-worker->notifications-worker:LAogICAgICAgIHsKICAgICAgICAgICJiaW5kaW5nIjogIk5PVElGSUNBVElPTlNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtY2lycnVzLTEyLW5vdGlmaWNhdGlvbnMtd29ya2VyLXByb2QiCiAgICAgICAgfQ==
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-cirrus-12-membership-worker-prod"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-cirrus-12-policy-worker-prod"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "test-cirrus-12-notifications-worker-prod"
+        }
       ]
     }
   }

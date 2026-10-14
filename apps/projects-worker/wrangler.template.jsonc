@@ -30,9 +30,18 @@
         }
       ],
       "services": [
-        // @cycle-break:projects-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItbWVtYmVyc2hpcC13b3JrZXItc3RhZ2UiCiAgICAgICAgfSw=
-        // @cycle-break+nl:projects-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1wb2xpY3ktd29ya2VyLXN0YWdlIgogICAgICAgIH0=
-// @cycle-break:projects-worker->billing-worker:LAogICAgICAgIHsKICAgICAgICAgICJiaW5kaW5nIjogIkJJTExJTkdfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtY2lycnVzLTEyLWJpbGxpbmctd29ya2VyLXN0YWdlIgogICAgICAgIH0=
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-cirrus-12-membership-worker-stage"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-cirrus-12-policy-worker-stage"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-cirrus-12-billing-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -48,9 +57,18 @@
         }
       ],
       "services": [
-        // @cycle-break:projects-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItbWVtYmVyc2hpcC13b3JrZXItcHJvZCIKICAgICAgICB9LA==
-        // @cycle-break+nl:projects-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1wb2xpY3ktd29ya2VyLXByb2QiCiAgICAgICAgfQ==
-// @cycle-break:projects-worker->billing-worker:LAogICAgICAgIHsKICAgICAgICAgICJiaW5kaW5nIjogIkJJTExJTkdfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtY2lycnVzLTEyLWJpbGxpbmctd29ya2VyLXByb2QiCiAgICAgICAgfQ==
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-cirrus-12-membership-worker-prod"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-cirrus-12-policy-worker-prod"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-cirrus-12-billing-worker-prod"
+        }
       ]
     }
   }
