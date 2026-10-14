@@ -48,7 +48,10 @@
         }
       ],
       "services": [
-        // @cycle-break:notifications-worker->events-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiRVZFTlRTX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1ldmVudHMtd29ya2VyLXN0YWdlIgogICAgICAgIH0=
+        {
+          "binding": "EVENTS_WORKER",
+          "service": "test-cirrus-12-events-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -73,7 +76,10 @@
         }
       ],
       "services": [
-        // @cycle-break:notifications-worker->events-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiRVZFTlRTX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1ldmVudHMtd29ya2VyLXByb2QiCiAgICAgICAgfQ==
+        {
+          "binding": "EVENTS_WORKER",
+          "service": "test-cirrus-12-events-worker-prod"
+        }
       ]
     }
   }

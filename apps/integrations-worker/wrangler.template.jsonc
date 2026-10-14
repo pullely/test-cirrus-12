@@ -42,10 +42,22 @@
         }
       ],
       "services": [
-        // @cycle-break:integrations-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItbWVtYmVyc2hpcC13b3JrZXItc3RhZ2UiCiAgICAgICAgfSw=
-        // @cycle-break:integrations-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1wb2xpY3ktd29ya2VyLXN0YWdlIgogICAgICAgIH0s
-        // @cycle-break:integrations-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItYmlsbGluZy13b3JrZXItc3RhZ2UiCiAgICAgICAgfSw=
-        // @cycle-break:integrations-worker->projects-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUFJPSkVDVFNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtY2lycnVzLTEyLXByb2plY3RzLXdvcmtlci1zdGFnZSIKICAgICAgICB9
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-cirrus-12-membership-worker-stage"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-cirrus-12-policy-worker-stage"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-cirrus-12-billing-worker-stage"
+        },
+        {
+          "binding": "PROJECTS_WORKER",
+          "service": "test-cirrus-12-projects-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -62,10 +74,22 @@
         }
       ],
       "services": [
-        // @cycle-break:integrations-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItbWVtYmVyc2hpcC13b3JrZXItcHJvZCIKICAgICAgICB9LA==
-        // @cycle-break:integrations-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LWNpcnJ1cy0xMi1wb2xpY3ktd29ya2VyLXByb2QiCiAgICAgICAgfSw=
-        // @cycle-break:integrations-worker->billing-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiQklMTElOR19XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC1jaXJydXMtMTItYmlsbGluZy13b3JrZXItcHJvZCIKICAgICAgICB9LA==
-        // @cycle-break:integrations-worker->projects-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUFJPSkVDVFNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtY2lycnVzLTEyLXByb2plY3RzLXdvcmtlci1wcm9kIgogICAgICAgIH0=
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-cirrus-12-membership-worker-prod"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-cirrus-12-policy-worker-prod"
+        },
+        {
+          "binding": "BILLING_WORKER",
+          "service": "test-cirrus-12-billing-worker-prod"
+        },
+        {
+          "binding": "PROJECTS_WORKER",
+          "service": "test-cirrus-12-projects-worker-prod"
+        }
       ]
     }
   }
